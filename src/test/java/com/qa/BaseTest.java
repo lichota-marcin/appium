@@ -191,7 +191,6 @@ public class BaseTest {
 		HashMap<String, String> environment = new HashMap<String, String>();
 		environment.put("PATH", "/Users/mlichota/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home/bin:/Users/mlichota/Library/Android/sdk/platform-tools:/Users/mlichota/Library/Android/sdk/cmdline-tools:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mlichota/Downloads/apache-maven-3.9.6:/Users/mlichota/Downloads/apache-maven-3.9.6/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin" + System.getenv("PATH"));
 		environment.put("ANDROID_HOME", "/Users/mlichota/Library/Android/sdk");
-		environment.put("JAVA_HOME", "/Users/mlichota/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home");
 		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
 				.usingDriverExecutable(new File("/opt/homebrew/Cellar/node/22.1.0/bin/node"))
 				.withAppiumJS(new File("/opt/homebrew/lib/node_modules/appium/build/lib/main.js"))
